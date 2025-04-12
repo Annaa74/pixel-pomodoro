@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>PixelPomo</h1>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="task-status">
+            <p id="status" class="pixel-font">Work</p>
+            <p id="repetitions"></p>
+        </div>
+        <select id="backgroundSelector">
+            <option value="animated.gif">Animated Theme 0</option>
+            <option value="animated20.gif">Animated Theme 1</option>
+            <option value="animated1.gif">Animated Theme 2</option>
+            <option value="animated2.gif">Animated Theme 3</option>
+            <option value="animated3.gif">Animated Theme 4</option>
+            <option value="animated4.gif">Animated Theme 5</option>
+            <option value="animated5.gif">Animated Theme 6</option>
+            <option value="animated6.gif">Animated Theme 7</option>
+            <option value="animated7.gif">Animated Theme 8</option>
+            <option value="animated8.gif">Animated Theme 9</option>
+            <option value="animated9.gif">Animated Theme 10</option>
+            <option value="animated10.gif">Animated Theme 11</option>
+            <option value="animated11.gif">Animated Theme 12</option>
+            <option value="animated12.gif">Animated Theme 13</option>
+            <option value="animated13.gif">Animated Theme 14</option>
+            <option value="animated14.gif">Animated Theme 15</option>
+            <option value="animated15.gif">Animated Theme 16</option>
+            <option value="animated16.gif">Animated Theme 17</option>
+            <option value="animated17.gif">Animated Theme 18</option>
+            <option value="animated18.gif">Animated Theme 19</option>
+            <option value="animated19.gif">Animated Theme 20</option>
+        </select>
+        <select id="musicSelector">
+            <option value="" selected>No Music</option>
+            <option value="music16.mp3">Music 1</option>
+            <option value="music1.mp3">Music 2</option>
+            <option value="music2.mp3">Music 3</option>
+            <option value="music3.mp3">Music 4</option>
+            <option value="music4.mp3">Music 5</option>
+            <option value="music5.mp3">Music 6</option>
+            <option value="music6.mp3">Music 7</option>
+            <option value="music7.mp3">Music 8</option>
+            <option value="music8.mp3">Music 9</option>
+            <option value="music9.mp3">Music 10</option>
+            <option value="music10.mp3">Music 11</option>
+            <option value="music11.mp3">Music 12</option>
+            <option value="music12.mp3">Music 13</option>
+            <option value="music13.mp3">Music 14</option>
+            <option value="music14.mp3">Music 15</option>
+            <option value="music15.mp3">Music 16</option>
+            <option value="music.mp3">Music 17</option>
+            <option value="music17.mp3">Music 18</option>
+            <option value="music18.mp3">Music 19</option>
+            <option value="music19.mp3">Music 20</option>
+        </select>
+        <audio id="musicPlayer" loop></audio>
+        <audio id="alarmSound" src="alarm.wav"></audio>
+        <button id="focusModeButton">Focus Mode</button>
+        <p id="appreciation" class="appreciation-text"></p>
+    </div>
+    <a href="https://www.linkedin.com/in/ananya-baghel-327307288/" target="_blank" class="watermark">Made by Ananya Baghel <img src="pixelheart.png" alt="Pixel Heart" class="pixel-heart"></a>
+    <script src="script.js"></script>
+</body>
+</html>
