@@ -215,3 +215,24 @@ startButton.addEventListener('click', () => {
     buttonClickFeedback(startButton);
     displayStartAppreciation(); // Call the new function
 });
+// --- GIF Preloading and Default Background ---
+
+// List of all GIFs from your dropdown
+const gifList = [
+  "animated.gif","animated20.gif","animated1.gif","animated2.gif","animated3.gif",
+  "animated4.gif","animated5.gif","animated6.gif","animated7.gif","animated8.gif",
+  "animated9.gif","animated10.gif","animated11.gif","animated12.gif","animated13.gif",
+  "animated14.gif","animated15.gif","animated16.gif","animated17.gif","animated18.gif",
+  "animated19.gif"
+];
+
+// Preload all GIFs into browser cache
+gifList.forEach(src => {
+  const img = new Image();
+  img.src = src; // adjust path if GIFs are inside /assets/
+});
+
+// Set a default background when page loads
+window.addEventListener("DOMContentLoaded", () => {
+  document.body.style.backgroundImage = `url('${gifList[0]}')`; // default GIF
+});
